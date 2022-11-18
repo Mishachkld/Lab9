@@ -11,12 +11,13 @@ namespace ms {
         void countLength();
         double getLength();
         void setRadius(double radius);
+        void outInformation();
 
 
     private:
-        double baseRadius = 0;
+        double baseRadius = -1;
         double PI = M_PI;
-        double length;
+        double length = -1;
 
 
     };

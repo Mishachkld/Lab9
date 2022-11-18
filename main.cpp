@@ -9,7 +9,7 @@ int main() {
     fs::inputData(R);
     ms::Circle circle = ms::Circle(R);
     circle.countLength();
-    fs::outputData(circle.getLength());
-
+//    fs::outputData(circle.getLength());
+    circle.outInformation();
     return 0;
 }
