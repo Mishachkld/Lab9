@@ -3,4 +3,8 @@ project(Lab9)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Lab9 main.cpp Circle.cpp Circle.h Func.cpp Func.h)
+add_executable(Lab9 main.cpp
+                    Circle.cpp
+                    Circle.hpp
+                    Func.cpp
+                    Func.hpp)

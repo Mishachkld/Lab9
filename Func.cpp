@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Func.h"
+#include "Func.hpp"
 
 
 namespace fs{

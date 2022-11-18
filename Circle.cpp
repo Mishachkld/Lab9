@@ -1,11 +1,14 @@
-#include "Circle.h"
+#include "Circle.hpp"
 #include <cmath>
 
 namespace ms {
 
 
     Circle::Circle(double radius) {
-        baseRadius = radius;
+        if (radius < 0)
+            std::cout<< "Errorrrrrrrr..." << std::endl;
+        else
+            baseRadius = radius;
     }
 
     Circle::~Circle() {}
@@ -13,6 +16,10 @@ namespace ms {
 
     void Circle::countLength() {
         length = 2 * PI * baseRadius;
+    }
+
+    void Circle::setRadius(double radius) {
+        baseRadius = radius;
     }
 
 

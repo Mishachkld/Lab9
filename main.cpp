@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Circle.h"
-#include "Func.h"
+#include "Circle.hpp"
+#include "Func.hpp"
 
 
 

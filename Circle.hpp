@@ -10,10 +10,11 @@ namespace ms {
         ~Circle();
         void countLength();
         double getLength();
+        void setRadius(double radius);
 
 
     private:
-        double baseRadius;
+        double baseRadius = 0;
         double PI = M_PI;
         double length;
 
