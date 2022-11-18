@@ -6,7 +6,7 @@ namespace ms {
 
     Circle::Circle(double radius) {
         if (radius < 0)
-            std::cout<< "Errorrrrrrrr..." << std::endl;
+            std::cout << "Errorrrrrrrr..." << std::endl;
         else
             baseRadius = radius;
     }
@@ -15,12 +15,13 @@ namespace ms {
 
 
     void Circle::countLength() {
-        length = 2 * PI * baseRadius;
+        if (baseRadius != -1)
+            length = 2 * PI * baseRadius;
     }
 
     void Circle::setRadius(double radius) {
         if (radius < 0)
-            std::cout<< "Errorrrrrrrr..." << std::endl;
+            std::cout << "Errorrrrrrrr..." << std::endl;
         else
             baseRadius = radius;
     }
@@ -29,13 +30,12 @@ namespace ms {
         return length;
     }
 
-    void Circle::outInformation(){
-
-        std::cout << "Radius:" << " " << baseRadius << std::endl;
-        if (length != -1)
-            std::cout << "Length of circle:" << " " << length<< std::endl;
-        else
-            std::cout << "Need count length of circle((((";
+    void Circle::outInformation() {
+        if (length != -1) {
+            std::cout << "Length of circle:" << " " << length << std::endl;
+            std::cout << "Radius:" << " " << baseRadius << std::endl;
+        } else
+            std::cout << "Need count length of circle((((" << std::endl;
 
     }
 }
